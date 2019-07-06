@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:scaleType="center"
+        android:src="@drawable/batik" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.4"
+        android:scaleType="center"
+        android:src="@drawable/gradient_biru"/>
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="800dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome : "
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama : "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/welcome"/>
+
+            <EditText
+                android:id="@+id/NameAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/welcome"/>
+
+            <TextView
+                android:id="@+id/TTL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempat Tanggal Lahir : "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Name"/>
+
+            <EditText
+                android:id="@+id/TTLAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Name"/>
+
+            <TextView
+                android:id="@+id/Instansi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instansi : "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/TTL"/>
+
+            <EditText
+                android:id="@+id/InstansiAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="85dp"
+                android:layout_below="@id/TTL"/>
+
+            <TextView
+                android:id="@+id/Jabatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jabatan : "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Instansi"/>
+
+            <EditText
+                android:id="@+id/JabatanAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Instansi"/>
+
+            <TextView
+                android:id="@+id/Telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Telp : "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Jabatan"/>
+
+            <EditText
+                android:id="@+id/TelpAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Jabatan"/>
+
+            <Button
+                android:id="@+id/Sndsbutton"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Telp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/button_selector"
+                android:text="SEND"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

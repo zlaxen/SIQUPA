@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:scaleType="center"
+        android:src="@drawable/batik" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.4"
+        android:scaleType="center"
+        android:src="@drawable/gradient_biru"/>
+
+    <TextView
+        android:id="@+id/name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="18dp"
+        android:drawableLeft="@drawable/person"
+        android:text=" Email :"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/name"/>
+
+    <TextView
+        android:id="@+id/pass_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="18dp"
+        android:drawableLeft="@drawable/password"
+        android:text=" Password :"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/pass"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:background="@drawable/button_selector"
+        android:id="@+id/LoginButton"/>
+
+</FrameLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AplikasiActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:scaleType="center"
+        android:src="@drawable/batik" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.4"
+        android:scaleType="center"
+        android:src="@drawable/gradient_biru"/>
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="800dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome : "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengumpulan ke : "
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_below="@id/welcome"/>
+
+            <TextView
+                android:id="@+id/sbmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="165dp"
+                android:text="-"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_below="@id/welcome"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/First"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Aplikasi : "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/sbmit"/>
+
+            <EditText
+                android:id="@+id/FirstAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:layout_below="@id/First"/>
+
+            <Button
+                android:id="@+id/NexusButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp"
+                android:layout_below="@id/FirstAnswer"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/button_selector"
+                android:text="Next" />
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

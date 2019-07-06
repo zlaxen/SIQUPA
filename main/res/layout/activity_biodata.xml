@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BiodataActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:scaleType="center"
+        android:src="@drawable/batik" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.4"
+        android:scaleType="center"
+        android:src="@drawable/gradient_biru"/>
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="800dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome : "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengumpulan ke : "
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_below="@id/welcome"/>
+
+            <TextView
+                android:id="@+id/sbmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="165dp"
+                android:text="-"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_below="@id/welcome"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/First"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/sbmit"/>
+
+            <EditText
+                android:id="@+id/FirstAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/First"/>
+
+            <TextView
+                android:id="@+id/Second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/FirstAnswer"/>
+
+            <EditText
+                android:id="@+id/SecondAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Second"/>
+
+            <TextView
+                android:id="@+id/Third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/SecondAnswer"/>
+
+            <EditText
+                android:id="@+id/ThirdAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Third"/>
+
+            <TextView
+                android:id="@+id/Fourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/ThirdAnswer"/>
+
+            <EditText
+                android:id="@+id/FourthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Fourth"/>
+
+            <TextView
+                android:id="@+id/Fifth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/FourthAnswer"/>
+
+            <EditText
+                android:id="@+id/FifthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Fifth"/>
+
+            <TextView
+                android:id="@+id/Sixth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/FifthAnswer"/>
+
+            <EditText
+                android:id="@+id/SixthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Sixth"/>
+
+            <TextView
+                android:id="@+id/Seventh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/SixthAnswer"/>
+
+            <EditText
+                android:id="@+id/SeventhAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Seventh"/>
+
+            <TextView
+                android:id="@+id/Eighth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/SeventhAnswer"/>
+
+            <EditText
+                android:id="@+id/EighthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Eighth"/>
+
+            <TextView
+                android:id="@+id/Ninth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/EighthAnswer"/>
+
+            <EditText
+                android:id="@+id/NinthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Ninth"/>
+
+            <TextView
+                android:id="@+id/Tenth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/NinthAnswer"/>
+
+            <EditText
+                android:id="@+id/TenthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Tenth"/>
+
+            <TextView
+                android:id="@+id/Eleven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/TenthAnswer"/>
+
+            <EditText
+                android:id="@+id/ElevenAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Eleven"/>
+
+            <TextView
+                android:id="@+id/Twelveth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/ElevenAnswer"/>
+
+            <EditText
+                android:id="@+id/TwelvethAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Twelveth"/>
+
+            <TextView
+                android:id="@+id/Thirteenth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/TwelvethAnswer"/>
+
+            <EditText
+                android:id="@+id/ThirteenthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Thirteenth"/>
+
+            <TextView
+                android:id="@+id/Fourteenth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/ThirteenthAnswer"/>
+
+            <EditText
+                android:id="@+id/FourteenthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Fourteenth"/>
+
+            <TextView
+                android:id="@+id/Fifteenth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/FourteenthAnswer"/>
+
+            <EditText
+                android:id="@+id/FifteenthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Fifteenth"/>
+
+            <TextView
+                android:id="@+id/Sixteenth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/FifteenthAnswer"/>
+
+            <EditText
+                android:id="@+id/SixteenthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Sixteenth"/>
+
+            <TextView
+                android:id="@+id/Seventeenth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/SixteenthAnswer"/>
+
+            <EditText
+                android:id="@+id/SeventeenthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Seventeenth"/>
+
+            <TextView
+                android:id="@+id/Eighteenth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/SeventeenthAnswer"/>
+
+            <EditText
+                android:id="@+id/EighteenthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Eighteenth"/>
+
+            <TextView
+                android:id="@+id/Ninteenth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/EighteenthAnswer"/>
+
+            <EditText
+                android:id="@+id/NinteenthAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Ninteenth"/>
+
+            <TextView
+                android:id="@+id/Twentieth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/NinteenthAnswer"/>
+
+            <EditText
+                android:id="@+id/TwentiethAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Twentieth"/>
+
+            <TextView
+                android:id="@+id/Twenty1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/TwentiethAnswer"/>
+
+            <EditText
+                android:id="@+id/Twenty1Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Twenty1"/>
+
+            <TextView
+                android:id="@+id/Twenty2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/Twenty1Answer"/>
+
+            <EditText
+                android:id="@+id/Twenty2Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Twenty2"/>
+
+            <TextView
+                android:id="@+id/Twenty3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/Twenty2Answer"/>
+
+            <EditText
+                android:id="@+id/Twenty3Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Twenty3"/>
+
+            <TextView
+                android:id="@+id/Twenty4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/Twenty3Answer"/>
+
+            <EditText
+                android:id="@+id/Twenty4Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Twenty4"/>
+
+            <TextView
+                android:id="@+id/Twenty5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/Twenty4Answer"/>
+
+            <EditText
+                android:id="@+id/Twenty5Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/Twenty5"/>
+
+        <Button
+            android:id="@+id/Sndbutton"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/Twenty5Answer"
+            android:text="SEND"
+            android:textStyle="bold"
+            android:background="@drawable/button_selector"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

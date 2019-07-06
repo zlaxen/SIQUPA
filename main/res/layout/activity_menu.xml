@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:alpha="0.5"
+        android:scaleType="center"
+        android:src="@drawable/wings"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.4"
+        android:scaleType="center"
+        android:src="@drawable/gradient_biru" />
+
+    <ImageView
+        android:id="@+id/jatim"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/jatim" />
+
+    <TextView
+        android:id="@+id/name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Welcome To Diskominfo Jatim"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/MainLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="18dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_selector"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/MainRegisButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainLoginButton"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginRight="18dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_selector"
+        android:text="Registration" />
+
+</FrameLayout>
